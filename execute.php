@@ -25,6 +25,11 @@ if(strpos($text, "/start") === 0 ) {
 	sendMsg($chatId, $response);
 }
 
+if(strpos($text, "/inserisciprodotto") === 0) {
+	$response = "Che prodotto vuoi inserire?";
+	sendMsg($chatId, $response);
+}
+
 function sendMsg($id, $msg) {
 	$token = "959200358:AAGuKd-FPbhM6_0wtT0lHL9XZb_Iyt0U4qM";
 
